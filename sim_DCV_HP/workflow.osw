@@ -1,0 +1,6 @@
+{
+  "seed_file": "/Users/m/Documents/Openstudio/models/kinozal_DCV_HP.osm",
+  "weather_file": "/Users/m/Documents/Openstudio/weather/Saint-Petersburg.epw",
+  "measure_paths": [],
+  "steps": []
+}
