@@ -1,6 +1,12 @@
 {
   "seed_file": "/Users/m/Documents/Openstudio/models/kinozal_DCV.osm",
   "weather_file": "/Users/m/Documents/Openstudio/weather/Saint-Petersburg.epw",
-  "measure_paths": [],
-  "steps": []
+  "measure_paths": ["/Applications/OpenStudioApplication-1.8.0/OpenStudioApp.app/Contents/Resources"],
+  "steps": [
+    {
+      "measure_dir_name": "openstudio_results",
+      "arguments": {},
+      "measure_type": "ReportingMeasure"
+    }
+  ]
 }
