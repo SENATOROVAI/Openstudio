@@ -2081,6 +2081,277 @@ LifeCycleCost:NonrecurringCost,
   0,                                      !- Cost
   ServicePeriod;                          !- Start of Costs
 
+Output:Variable,
+  ,                                       !- Key Value
+  Site Outdoor Air Drybulb Temperature,   !- Variable Name
+  monthly;                                !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Zone Air Temperature,                   !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Zone Air Relative Humidity,             !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+Output:Table:Monthly,
+  Building Energy Performance - FuelOilNo1, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:FuelOilNo1,                     !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:FuelOilNo1,                     !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:FuelOilNo1,           !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:FuelOilNo1,           !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:FuelOilNo1,          !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:FuelOilNo1,          !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:FuelOilNo1,                        !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:FuelOilNo1,                       !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:FuelOilNo1,              !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:FuelOilNo1,              !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:FuelOilNo1,               !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:FuelOilNo1,               !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:FuelOilNo1,               !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:FuelOilNo1,                  !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - FuelOilNo2, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:FuelOilNo2,                     !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:FuelOilNo2,                     !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:FuelOilNo2,           !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:FuelOilNo2,           !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:FuelOilNo2,          !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:FuelOilNo2,          !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:FuelOilNo2,                        !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:FuelOilNo2,                       !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:FuelOilNo2,              !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:FuelOilNo2,              !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:FuelOilNo2,               !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:FuelOilNo2,               !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:FuelOilNo2,               !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:FuelOilNo2,                  !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - PropaneGas, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:PropaneGas,                     !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:PropaneGas,                     !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:PropaneGas,           !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:PropaneGas,           !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:PropaneGas,          !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:PropaneGas,          !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:PropaneGas,                        !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:PropaneGas,                       !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:PropaneGas,              !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:PropaneGas,              !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:PropaneGas,               !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:PropaneGas,               !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:PropaneGas,               !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:PropaneGas,                  !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - Coal,     !- Name
+  2,                                      !- Digits After Decimal
+  Heating:Coal,                           !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:Coal,                           !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:Coal,                 !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:Coal,                 !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:Coal,                !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:Coal,                !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:Coal,                              !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:Coal,                             !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:Coal,                    !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:Coal,                    !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:Coal,                     !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:Coal,                     !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:Coal,                     !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:Coal,                        !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - Diesel,   !- Name
+  2,                                      !- Digits After Decimal
+  Heating:Diesel,                         !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:Diesel,                         !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:Diesel,               !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:Diesel,               !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:Diesel,              !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:Diesel,              !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:Diesel,                            !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:Diesel,                           !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:Diesel,                  !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:Diesel,                  !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:Diesel,                   !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:Diesel,                   !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:Diesel,                   !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:Diesel,                      !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - Gasoline, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:Gasoline,                       !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:Gasoline,                       !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:Gasoline,             !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:Gasoline,             !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:Gasoline,            !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:Gasoline,            !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:Gasoline,                          !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:Gasoline,                         !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:Gasoline,                !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:Gasoline,                !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:Gasoline,                 !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:Gasoline,                 !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:Gasoline,                 !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:Gasoline,                    !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - OtherFuel1, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:OtherFuel1,                     !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:OtherFuel1,                     !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:OtherFuel1,           !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:OtherFuel1,           !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:OtherFuel1,          !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:OtherFuel1,          !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:OtherFuel1,                        !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:OtherFuel1,                       !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:OtherFuel1,              !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:OtherFuel1,              !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:OtherFuel1,               !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:OtherFuel1,               !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:OtherFuel1,               !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:OtherFuel1,                  !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
+Output:Table:Monthly,
+  Building Energy Performance - OtherFuel2, !- Name
+  2,                                      !- Digits After Decimal
+  Heating:OtherFuel2,                     !- Variable or Meter Name 1
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
+  Cooling:OtherFuel2,                     !- Variable or Meter Name 2
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
+  Interior Lighting:OtherFuel2,           !- Variable or Meter Name 3
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
+  Exterior Lighting:OtherFuel2,           !- Variable or Meter Name 4
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
+  Interior Equipment:OtherFuel2,          !- Variable or Meter Name 5
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
+  Exterior Equipment:OtherFuel2,          !- Variable or Meter Name 6
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
+  Fans:OtherFuel2,                        !- Variable or Meter Name 7
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
+  Pumps:OtherFuel2,                       !- Variable or Meter Name 8
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
+  Heat Rejection:OtherFuel2,              !- Variable or Meter Name 9
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
+  Humidification:OtherFuel2,              !- Variable or Meter Name 10
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
+  Heat Recovery:OtherFuel2,               !- Variable or Meter Name 11
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
+  Water Systems:OtherFuel2,               !- Variable or Meter Name 12
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
+  Refrigeration:OtherFuel2,               !- Variable or Meter Name 13
+  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
+  Generators:OtherFuel2,                  !- Variable or Meter Name 14
+  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
+
 Output:Table:Monthly,
   Building Energy Performance - Electricity, !- Name
   2,                                      !- Digits After Decimal

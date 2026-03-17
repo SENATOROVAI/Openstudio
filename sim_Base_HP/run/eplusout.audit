@@ -1,9 +1,9 @@
   Processing Schedule Input -- Start
   Processing Schedule Input -- Complete
- MonthlyInputCount=           8
+ MonthlyInputCount=          16
  sizeMonthlyInput=          25
- MonthlyFieldSetInputCount=          96
- sizeMonthlyFieldSetInput=         100
+ MonthlyFieldSetInputCount=         208
+ sizeMonthlyFieldSetInput=         400
  MonthlyTablesCount=           4
  MonthlyColumnsCount=          56
  sizeReportName=         100
@@ -18,7 +18,7 @@
  numCompSizeTableEntry=          41
  NumOfRVariable=        2045
  NumOfRVariable(Total)=        2045
- NumOfRVariable(Actual)=          28
+ NumOfRVariable(Actual)=          31
  NumOfRVariable(Summed)=          22
  NumOfRVariable(Meter)=          21
  NumOfIVariable=          60
@@ -31,8 +31,8 @@
  MAXHCArrayBounds=          10
  MaxVerticesPerSurface=           4
  ClippingAlgorithm=SutherlandHodgman
- MonthlyFieldSetInputCount=          96
- NumConsideredOutputVariables=         109
+ MonthlyFieldSetInputCount=         208
+ NumConsideredOutputVariables=         224
  MaxConsideredOutputVariables=       10000
  numActuatorsUsed=           0
  numEMSActuatorsAvailable=           0
